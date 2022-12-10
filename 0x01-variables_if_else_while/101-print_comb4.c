@@ -21,9 +21,9 @@ int main(void)
 			{
 				if (c != d && d != e && e < d && d < c)
 				{
-					putchar('a');
-					putchar('b');
-					putchar('e');
+					putchar('a' + e);
+					putchar('b' + d);
+					putchar('e' + c);
 					if (c + d + e != 9 + 8 + 7)
 					{
 						putchar(',');

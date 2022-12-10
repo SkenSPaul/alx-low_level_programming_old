@@ -28,7 +28,8 @@ int main(void)
 			}
 			c++;
 		}
-		putchar('\n');
-		return (0);
+		d++;
 	}
+	putchar('\n');
+	return (0);
 }

@@ -10,9 +10,9 @@
 
 void print_alphabet(void)
 {
-	char ph = "a';
+	char ph = 'a';
 
-	while(ph <= 'z')
+	while (ph <= 'z')
 	{
 		_putchar(ph);
 		ph++;

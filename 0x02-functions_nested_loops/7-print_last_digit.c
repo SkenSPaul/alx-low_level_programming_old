@@ -18,3 +18,4 @@ int print_last_digit(int nld)
 	}
 	_putchar(gld + '0');
 	return (gld);
+}

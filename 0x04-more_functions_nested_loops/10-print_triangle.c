@@ -8,20 +8,15 @@
 
 void print_triangle(int size)
 {
-	int i, j, n;
+	int i, j;
 
-	/* Input number of rows from user */
-	printf("Enter value of n: ");
-	scanf("%d", &n);
-
-	for (i = 1; i <= n; i++)
-	{/* Print i number of stars */
-		for (j = 1; j <= i; j++)
+	for (i = 1; i <= size; i++)
+	{
+		for (j = 1; j <= size; j++)
 		{
-			printf("#");
+			putchar("#");
 		}
-		/* Move to next line */
-		printf("\n");
+		putchar("\n");
 	}
 	return (0);
 }

@@ -2,21 +2,25 @@
 
 /**
  * print_triangle - function that prints a triangle, followed by a new line
- * Return: Triangle shape
  * @size: Number of rows
+ * Return: Triangle shape
  */
 
 void print_triangle(int size)
 {
 	int i, j;
 
-	for (i = 1; i <= size; i++)
+	if (size > 0)
+
+	for (i = size; i > 0; 1--)
 	{
 		for (j = 1; j <= size; j++)
-		{
-			putchar("#");
-		}
-		putchar("\n");
+			if (j >= i)
+				_putchar('#');
+			else
+				_putchar(' ');
+		_putcahr('\n');
 	}
-	return (0);
+	else
+		_putchar('\n');
 }

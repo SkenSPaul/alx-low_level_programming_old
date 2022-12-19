@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * _strlen - function that returns the length of a string
- * @s:  a parameter to change
+ * @s:  a string whose length is to be determined
  * Return: len
  */
 

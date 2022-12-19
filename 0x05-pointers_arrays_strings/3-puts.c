@@ -7,7 +7,8 @@
 
 void _puts(char *str)
 {
-	while (*str)
-		_putchar(*str++);
-	_putchar('\n');
+	char Mystr[] = "H";
+	-puts(Mystr);
+	return (0);
 }
+

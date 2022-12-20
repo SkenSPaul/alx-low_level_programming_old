@@ -6,55 +6,30 @@
 /**
  * main -  program that generates random valid passwords
  * for the program 101-crackm
+ * Return: Always 0
  */
 
-void randomPasswordGeneration(int N)
+int main(void)
 {
-	 int i = 0;
+	int i, sum, n;
+	int pass[100];
 
-	 int randomizer = 0;
+	sum = 0;
 
-	 srand((unsigned int)(time(NULL)));
-	 char numbers[] = "0123456789";
-	 char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	 char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	 char symbols[] = "!@#$^&*?";
-	 char password[N];
+	srand(time(NULL));
 
-	 randomizer = rand()
-
-		 for (i = 0; i < N; i++)
-		 {
-			 if (randomizer == 1)
-			 {
-				password[i] = numbers[rand() % 10];
-				randomizer = rand() % 4;
-				printf("%c", password[i]);
-			 else
-				 if (randomizer == 2)
-		  {
-			   password[i] = symbols[rand() % 8];
-			    randomizer = rand() % 4;
-			     printf("%c", password[i]);
-		  }
-		   else if (randomizer == 3)
-		   {
-			   password[i] = LETTER[rand() % 26];
-			    randomizer = rand() % 4;
-			    printf("%c", password[i]);
-		   }
-		 else
-		 {
-			 password[i] = letter[rand() % 26];
-			  randomizer = rand() % 4;
-			   printf("%c", password[i]);
-		 }
-	 }
-}
-
-int main()
-{
-	int N = 10;
-	randomPasswordGeneration(N);
-	return 0;
+	for (i = 0; i < 100; i++)
+	{
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < '0')
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
+	}
+	return (0);
 }

@@ -11,6 +11,6 @@ int _strcmp(char *s1, char *s2);
 	char str2[];
 	int len;
 
-	_strcmp(str1, str2);
+	_strcmp(*str1, *str2);
 	return (len);
 }

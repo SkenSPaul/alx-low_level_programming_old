@@ -6,23 +6,25 @@
  * @dest: fisrt parameter
  * @src: second parameter
  * @n: third parameter
- * Return: string
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n);
 {
-	int length, j;
-	/* j is a counter for  n bytes of src to be concatenated */
-	/* length = length of destination string */
+	int i;
+	int j;
 
-	length = 0;
-	while (dest[length] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		length++;
+		i++;
 	}
-	for (j = 0; j < n && src[j] != '\0'; j++, length++)
+	j = 0;
+	while (j < n && src[i] != '\0')
 	{
-		dest[length] = src[j];
+		dest[i] = src[i];
+		i++;
+		j++;
 	}
-	dest[length] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

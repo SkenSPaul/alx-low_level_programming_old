@@ -9,15 +9,15 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int counter;
-	int cmpVal;
+	if (firstString == NULL && secondString == NULL)
+		return (0);
+	int counter = 0;
 
-	counter = 0;
-
-	while (s1[counter] == s2[counter] && s1[counter] != '\0')
+	while (firstString[counter] == secondString[counter])
 	{
+		if (firstString[counter] == '\0' && secondString[counter] == '\0')
+			return (0);
 		counter++;
 	}
-	cmpVal = s1[counter] - s2[counter];
-	return (cmpVal);
+	return (firstString[counter] - secondString[counter]);
 }

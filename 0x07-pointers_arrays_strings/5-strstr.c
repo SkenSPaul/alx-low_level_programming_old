@@ -24,25 +24,24 @@ char *_strstr(char *haystack, char *needle)
 	{
 		j = 0;
 		a = i;
-		while (needle[j] != 0)
-
-		{
-			if (needle[j] == haystack[a])
-				{
-					compare = 1;
-				}
-			else
-			{
-				compare = 0;
-				break;
-			}
-				j++;
-				a++;
-		}
-		if (compare == 1)
-		{
-			return (haystack + i);
-		}
+	while (needle[j] != 0)
+	{
+	if (needle[j] == haystack[a])
+	{
+		compare = 1;
+	}
+	else
+	{
+		compare = 0;
+	break;
+	}
+		j++;
+		a++;
+	}
+	if (compare == 1)
+	{
+	return (haystack + i);
+	}
 		i++;
 	}
 	return (0);

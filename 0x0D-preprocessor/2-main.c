@@ -1,5 +1,5 @@
-#ifndef NAME_H
-#define NAME_H
+#ifndef NAME
+#define NAME
 
 /**
  * main - check the code for Holberton School students.
@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	#ifdef NAME_H
+	#ifdef NAME
 		printf("%s\n", __FILE__);
 	#endif
 	return (0);

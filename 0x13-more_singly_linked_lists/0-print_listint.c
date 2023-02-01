@@ -6,27 +6,19 @@
   * @h: list to print elements of
   * Return: size_t of the list
   */
-
-size_t print_listint(const listint_t *h)
-
+ize_t print_listint(const listint_t *h)
 {
+	size_t n_nodes = 0;
 
-	size_t n = 0;
-
-
+	if (!h)
+		return (0);
 
 	while (h)
-
 	{
-
 		printf("%d\n", h->n);
-
 		h = h->next;
-
-		n++;
-
+		n_nodes++;
 	}
-
-	return (n);
-
+	return (n_nodes);
 }
+

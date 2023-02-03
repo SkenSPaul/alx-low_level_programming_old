@@ -7,16 +7,16 @@
   * Return: size_t of the list
   */
 
-ize_t print_listint(const listint_t *h)
+size_t print_listint(const listint_t *h)
 
 {
+	size_t r = 0;
 
-	int x;
-
-	for (x = 0; h != NULL; x++)
+	while (h)
 	{
-	printf("%i\n", h->n);
+	printf("%d\n", h->n);
 	h = h->next;
+	r++;
 	}
-	return (x);
+	return (r);
 }
